@@ -1,0 +1,40 @@
+@import '_custom_bootstrap_vatiables.scss',
+'../../bower_components/bootstrap/scss/_functions.scss',
+'../../bower_components/bootstrap/scss/_variables.scss',
+'../../bower_components/bootstrap/scss/_mixins.scss',
+'_mixin',
+'_param',
+'partials/ui/_webfont',
+'partials/ui/_checkbox',
+'partials/ui/_font_size',
+
+'partials/_footer',
+'partials/_header';
+
+.home_page {
+	height: 100vh;
+	background: #F3F6F7;
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50vh;
+		background: #5DBCA4;
+		z-index: -1;
+	}
+}
+
+.panel {
+	background: $lght_green;
+	border-radius: 10px;
+
+	&.enter_panel {
+		max-width: 380px;
+		flex: 0 0 380px;
+	}
+}

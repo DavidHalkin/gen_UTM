@@ -1,0 +1,39 @@
+@import '_custom_bootstrap_vatiables.scss',
+'../../bower_components/bootstrap/scss/_functions.scss',
+'../../bower_components/bootstrap/scss/_variables.scss',
+'../../bower_components/bootstrap/scss/_mixins.scss';
+
+:root {
+	--bold: 'Alumni Sans', sans-serif;
+}
+
+$lght_green: #ABDDD1;
+
+body,
+html {
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.bold_font {
+	font-family: var(--bold);
+}
+
+.input_holder {
+	position: relative;
+
+	.ico {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		color: #37545F;
+		cursor: pointer;
+	}
+}
