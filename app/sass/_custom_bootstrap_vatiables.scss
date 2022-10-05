@@ -1,8 +1,9 @@
 $theme-colors: (
-	"success": #88DEC9,
 	"primary": #37AEEC,
 	"warning": #FFBC45,
 	"danger": #FF6148,
+	"light_green": #ABDDD1,
+	"dark_green": #5DBCA4,
 );
 $grid-breakpoints: (
 	xs: 0,
@@ -32,7 +33,7 @@ $btn-border-radius: 5px;
 // $btn-border-radius-sm: 8px;
 // $form-group-margin-bottom: 6px;
 
-// $body-color: #fff;
+$body-color: #37545F;
 
 
 

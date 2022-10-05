@@ -16,9 +16,30 @@ html {
 
 body {
 	font-family: 'Inter', sans-serif;
-
+	min-width: 1000px;
 }
 
+.centered {
+	max-width: 1080px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	.main {
+		flex: 1 0 auto;
+	}
+
+	.footer,
+	.header {
+		flex: 0 0 auto;
+	}
+}
 
 
 .bold_font {
@@ -36,4 +57,24 @@ body {
 		color: #37545F;
 		cursor: pointer;
 	}
+}
+
+.input-group-append {
+	margin: 0;
+}
+
+.btn-light {
+	&.active {
+		background: theme-color('dark_green') !important;
+	}
+}
+
+a.tdn {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.txt_wraperd {
+	word-break: break-all;
 }

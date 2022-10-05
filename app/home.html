@@ -8,7 +8,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Inter:wght@400;500&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Inter:wght@400;500;700&display=swap"
 		rel="stylesheet">
 
 	<link rel="stylesheet" href="css/custom_bootstrap.css">
@@ -17,31 +17,218 @@
 </head>
 
 <body>
-	<div class="home_page d-flex  align-items-center justify-content-center">
-		<div class="enter_panel panel p-5">
-			<h4 class="text-center mb-4 bold_font fz_30">ВОЙТИ</h4>
-			<div class="form-group">
-				<input type="email" class="form-control" id="f1" placeholder="Логин (почта)">
-				<div class="invalid-feedback d-block fz_10">
-					Вы ввели неправильные данные для входа. <br> Попробуйте ещё раз или обратитесь к администратору
-				</div>
+	<div class="wrapper">
+		<div class="header bg-light_green px-3">
+			<div class="centered d-flex align-items-center">
+				<strong class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></strong>
+				<ul class="main_nav list-unstyled mb-0 d-flex align-items-center flex-wrap col justify-content-center">
+					<li><a href="#">Архив</a></li>
+					<li class="active"><a href="#">Материалы</a></li>
+					<li><a href="#">Статистика</a></li>
+				</ul>
+				<div class="d-flex align-items-center">
+					<span class="mr-2 admin_ico">
+						<a href="#">
+							<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="0.5" width="30" height="30" rx="5" fill="#F79788" />
+								<path
+									d="M24 16.1C23.9 16.1 23.7 16.2 23.6 16.3L22.6 17.3L24.7 19.4L25.7 18.4C25.9 18.2 25.9 17.8 25.7 17.6L24.4 16.3C24.3 16.2 24.2 16.1 24 16.1ZM22.1 17.9L16 23.9V26H18.1L24.2 19.9L22.1 17.9ZM24 6H16V12H24V6ZM22 10H18V8H22V10ZM16 21.06V14H24V14.1C23.24 14.1 22.57 14.5 22.19 14.89L21.07 16H18V19.07L16 21.06ZM14 6H6V16H14V6ZM12 14H8V8H12V14ZM14 23.06V18H6V24H14V23.06ZM12 22H8V20H12V22Z"
+									fill="#37545F" />
+							</svg>
+						</a>
+					</span>
+					<div class="dropdown dropdown_custom">
+						<div class="btn text-left d-flex align-items-center" data-toggle="dropdown" aria-expanded="false">
 
+							<span class="photo_user">
+								<img src="images/icon.svg" alt="" class="img-fluid">
+							</span>
+							<div class="txt_info pl-3 col pr-0">
+								<span class="d-block bold_font  text-truncate">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit.</span>
+								<span class="d-block fz_12 text-truncate">администратор</span>
+							</div>
+						</div>
+						<div class="dropdown-menu bg-dark_green">
+							<a class="dropdown-item" href="#">Управление ролями</a>
+							<a class="dropdown-item" href="#">Лог пользователей</a>
+							<a class="dropdown-item" href="#">Настройка шаблонов</a>
+						</div>
+					</div>
+					<button class="btn btn-danger ml-2 px-3 btn-sm">Выйти</button>
+				</div>
 			</div>
-			<div class="form-group">
-				<div class="input_holder input_holder_js">
-					<input type="password" class="form-control" id="f11" placeholder="Пароль">
-					<span class="ico"><i class="far fa-eye"></i> </span>
+		</div>
+		<div class="main px-3 py-5">
+			<div class="centered">
+				<div class="text-center pb-5">
+					<h2 class="bold_font fz_50">Генератор UTM-меток</h2>
+					<p>Создавайте ссылки для рекламных кампаний в несколько кликов</p>
+				</div>
+				<div class="panel p-5 mb-4">
+					<label for="asd" class="bold_font fz_30">Адрес страницы, для которой генерируем UTM-метки:</label>
+					<div class="input-group mb-0">
+						<input type="text" class="form-control" placeholder="mysite.ru" id="asd">
+						<div class="input-group-append">
+							<button class="btn btn-danger fz_12" type="button" id="button-addon2">Очистить</button>
+						</div>
+					</div>
+				</div>
+				<div class="panel p-5 mb-4">
+					<p class="bold_font fz_30">Выбор источника перехода:</p>
+					<button class="btn btn-light fz_12 py-2">Вконтакте</button>
+					<button class="btn btn-light fz_12 py-2 active">Telegram</button>
+					<button class="btn btn-light fz_12 py-2">Яндекс</button>
+				</div>
+				<div class="text-center pt-3">
+					<a href="#" class="btn btn-outline-secondary py-2 fz_12">Создать ссылку свободного вида</a>
+				</div>
+				<div class="row mt-5 mx-n2">
+					<div class="col-6 px-2 mb-4">
+						<div class="panel p-5 h-100">
+							<h3 class="bold_font fz_30 mb-3">Выбор основных параметров:</h3>
+							<div class="form-group">
+								<p class="label mb-2">Источник рекламной кампании (источник перехода) <strong
+										class="d-block">utm_sourse</strong></p>
+								<select class="custom-select">
+									<option selected>Выбрать из списка</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<p class="label mb-2">Тип рекламной кампании (тип трафика) <strong
+										class="d-block">utm_medium</strong></p>
+								<select class="custom-select">
+									<option selected>Выбрать из списка</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<p class="label mb-2">Название рекламной кампании<strong class="d-block">utm_campaign</strong>
+								</p>
+								<select class="custom-select">
+									<option selected>Выбрать из списка</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 px-2 mb-4">
+						<div class="panel p-5 h-100">
+							<h3 class="bold_font fz_30 mb-3">Выбор дополнительных параметров:</h3>
+							<div class="form-group">
+								<p class="label mb-2">Идентификатор объявления<strong class="d-block">utm_content</strong></p>
+								<select class="custom-select">
+									<option selected>Выбрать из списка</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<p class="label mb-2">Ключевое слово<strong class="d-block">utm_term</strong></p>
+								<select class="custom-select">
+									<option selected>Выбрать из списка</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<p class="label mb-2">Дополнительные get параметры<strong class="d-block">get</strong>
+								</p>
+								<input type="email" class="form-control" id="aaa" placeholder="asdasd,asdasd,asdasd">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel p-5 mb-4">
+					<div class="d-flex align-items-center">
+						<p class="bold_font fz_30 mb-0">Итоговая ссылка:</p>
+						<div class="d-flex ml-auto">
+							<label for="inputFile"
+								class="btn btn-outline-secondary d-inline-flex align-items-center ml-2 fz_12 mb-0">
+								<input type="file" class="d-none" id="inputFile">
+								<i class="fas fa-table fz_16 mr-2"></i>
+								Добавить таблицу
+							</label>
+							<button class="btn btn-outline-secondary d-inline-flex align-items-center ml-2 fz_12"
+								data-toggle="modal" data-target="#exampleModal">
+								<i class="far fa-comment fz_16 mr-2"></i>
+								Добавить комментарий</button>
+						</div>
+					</div>
 
+					<div class="input-group pt-3">
+						<input type="text" class="form-control" placeholder="mysite.ru" id="asd">
+						<div class="input-group-append">
+							<button class="btn btn-danger fz_12" type="button" id="button-addon2">Создать</button>
+						</div>
+					</div>
+					<div class="row pt-3 mx-n2">
+						<div class="col-auto px-2">
+							<button class="btn btn-outline-secondary d-inline-flex align-items-center fz_12">
+								<i class="far fa-copy fz_16 mr-2"></i>
+								Копировать</button>
+							<button class="btn btn-outline-secondary d-inline-flex align-items-center fz_12">
+								Сократить</button>
+						</div>
+						<div class="col px-2">
+							<p class="fz_12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque in laudantium
+								accusamus, culpa porro vero eos incidunt officiis illum sunt modi autem voluptatum corrupti
+								ratione quo doloribus obcaecati tempore.</p>
+						</div>
+					</div>
 				</div>
-				<div class="invalid-feedback  fz_10">
-					Вы ввели неправильные данные для входа. <br> Попробуйте ещё раз или обратитесь к администратору
+				<div class="text-center">
+					<a href="#" class="btn btn-danger py-2 fz_12">Создать новую ссылку</a>
 				</div>
 			</div>
-			<div class="text-center pt-4">
-				<button class="btn btn-danger px-4">Войти</button>
+		</div>
+		<div class="footer px-3 bg-dark_green py-3">
+			<div class="centered text-center">
+				<ul class="main_nav list-unstyled mb-0 d-flex align-items-center flex-wrap justify-content-center ">
+					<li><a href="#">Архив</a></li>
+					<li class="active"><a href="#">Материалы</a></li>
+					<li><a href="#">Статистика</a></li>
+				</ul>
+				<div class="py-3">
+					<button class="btn btn-danger fz_12">Обратиться в техподдержку</button>
+				</div>
+				<div class="copy fz_14">
+					GTU GROUP, 2022
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Добавление комментария</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<textarea class="form-control" rows="3" placeholder="Введите текст комментария…"></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger fz_12">Добавить</button>
+					<button type="button" class="btn btn-secondary fz_12">Добавлять ко всем ссылкам</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>

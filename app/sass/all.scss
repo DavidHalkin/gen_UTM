@@ -38,3 +38,62 @@
 		flex: 0 0 380px;
 	}
 }
+
+.table-white {
+
+
+	td,
+	th {
+		background: #fff;
+		border-color: #37545F !important;
+	}
+
+	th {
+		background: theme-color('dark_green');
+		border-bottom: 0 !important;
+
+	}
+}
+
+.pager_section {
+	ul {
+		li {
+			min-width: 40px;
+			height: 40px;
+
+			&.disabled {
+				a {
+					opacity: 0.4;
+					pointer-events: none;
+				}
+			}
+
+			&.active {
+				a {
+					background: theme-color('dark_green');
+					color: #fff;
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				background: #fff;
+				font-size: 15px;
+				color: #37545F;
+				width: 100%;
+				height: 100%;
+				border-radius: 5px;
+				border: 1px solid #37545F;
+
+				&:hover {
+					text-decoration: none;
+					background: theme-color('dark_green');
+					color: #fff;
+				}
+			}
+		}
+	}
+}
