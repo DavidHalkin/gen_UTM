@@ -172,4 +172,6 @@ a.tdn:hover { text-decoration: none; }
 
 .hidden_text { display: none; }
 
+.input_select, .login_name { --w: 190px; max-width: var(--w); -webkit-box-flex: 0; -ms-flex: 0 0 var(--w); flex: 0 0 var(--w); }
+
 /*# sourceMappingURL=all.css.map */
