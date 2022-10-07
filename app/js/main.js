@@ -1,8 +1,6 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
-	// <i class="far fa-eye-slash"></i>
-	// const passBlock = document.querySelectorAll('.input_holder_js'),
-	// 	input = document.querySelectorAll('.input_holder_js .form-control');
+
 
 	$(".toggle_password_js").click(function () {
 
