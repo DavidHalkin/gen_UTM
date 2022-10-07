@@ -51,7 +51,7 @@
 	th {
 		background: theme-color('dark_green');
 		border-bottom: 0 !important;
-
+		vertical-align: middle !important;
 	}
 }
 
@@ -120,4 +120,20 @@
 	--w: 190px;
 	max-width: var(--w);
 	flex: 0 0 var(--w);
+}
+
+.label_comment {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	--w: 150px;
+	max-width: var(--w);
+	flex: 0 0 var(--w);
+}
+
+.hidden_tr td {
+	>div {
+		display: none;
+	}
 }

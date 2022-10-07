@@ -138,26 +138,159 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-auto px-1 mt-2">
+							<!-- <div class="col-12 col-xl-auto px-1 mt-2">
 								<button class="btn btn-danger fz_12"><i class="fas fa-plus mr-2"></i>Внутренний
 									комментарий</button>
 								<button class="btn btn-danger fz_12"><i class="fas fa-plus mr-2"></i>Описание ссылки</button>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<table class="table table-bordered table-white mt-5">
 						<thead>
 							<tr>
-								<th class="fz_14 font-weight-normal text-center"> Логин</th>
-								<th class="fz_14 font-weight-normal text-center"> Вход</th>
-								<th class="fz_14 font-weight-normal text-center"> Выход</th>
+								<th class="fz_14 font-weight-normal text-center"> Платформа</th>
+								<th class="fz_14 font-weight-normal text-center"> Формат</th>
+								<th class="fz_14 font-weight-normal text-center"> Источник utm_source</th>
+								<th class="fz_14 font-weight-normal text-center"> Тип кампании utm_medium</th>
+								<th class="fz_14 font-weight-normal text-center"> Название кампании utm_campaign</th>
+								<th class="fz_14 font-weight-normal text-center"> utm_content</th>
+								<th class="fz_14 font-weight-normal text-center"> utm_term</th>
+								<th class="fz_14 font-weight-normal text-center"> get</th>
+								<th class="fz_14 font-weight-normal text-center"> Edit</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text-center fz_14"><a href="#">login 1</a></td>
-								<td class="text-center fz_14">ГГ-ММ-ДД-ЧЧ-ММ-CC</td>
-								<td class="text-center fz_14">@ГГ-ММ-ДД-ЧЧ-ММ-CC</td>
+								<td class="text-center fz_14 align-middle">Яндекс</td>
+								<td class="text-center fz_14 align-middle"> Поиск</td>
+								<td class="text-center fz_14 align-middle"> yandex</td>
+								<td class="text-center fz_14 align-middle">cpc </td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox  etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">rsy|{campaign_id}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">phrase_id|{phrase_id}|gid|{gbid}|aid|{ad_</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">{keyword}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">source={source}&device={device_type}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<a href="#" class="fas fa-edit tdn text-danger fz_20 showTR_js"></a>
+								</td>
+							</tr>
+							<tr class="hidden_tr">
+								<td colspan="9" class="p-0">
+									<div class="row_info">
+										<div class="d-flex">
+											<div class="col-6 p-0">
+												<div class="d-flex h-100">
+													<div class="label bg-dark_green p-2 label_comment">
+														Внутренний
+														комментарий</div>
+													<div class="txt_info col p-2" contenteditable="true">Lorem ipsum dolor sit amet
+														consectetur adipisicing
+													</div>
+												</div>
+											</div>
+											<div class="col-6 p-0">
+												<div class="d-flex  h-100">
+													<div class="label bg-dark_green label_comment p-2">Описание ссылки</div>
+													<div class="txt_info col  p-2" contenteditable="true">Lorem ipsum dolor sit amet
+														consectetur adipisicing
+														elit. Nobis optio voluptatum ratione eveniet cum magnam, repellendus eligendi
+														corporis nam dicta illum pariatur alias soluta nihil id, impedit debitis odio
+														voluptate!
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-center fz_14 align-middle">Яндекс</td>
+								<td class="text-center fz_14 align-middle"> Поиск</td>
+								<td class="text-center fz_14 align-middle"> yandex</td>
+								<td class="text-center fz_14 align-middle">cpc </td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox  etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">rsy|{campaign_id}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">phrase_id|{phrase_id}|gid|{gbid}|aid|{ad_</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">{keyword}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<label class="custom_checkbox etc_checkbox">
+										<input type="checkbox" name="checkbox">
+										<em class="marker"></em>
+										<span class="label fz_12">source={source}&device={device_type}</span>
+									</label>
+								</td>
+								<td class="text-center fz_14 align-middle">
+									<a href="#" class="fas fa-edit tdn text-danger fz_20 showTR_js"></a>
+								</td>
+							</tr>
+							<tr class="hidden_tr">
+								<td colspan="9" class="p-0">
+									<div class="row_info">
+										<div class="d-flex">
+											<div class="col-6 p-0">
+												<div class="d-flex h-100">
+													<div class="label bg-dark_green p-2 label_comment">
+														Внутренний
+														комментарий</div>
+													<div class="txt_info col p-2" contenteditable="true">Lorem ipsum dolor sit amet
+														consectetur adipisicing
+													</div>
+												</div>
+											</div>
+											<div class="col-6 p-0">
+												<div class="d-flex  h-100">
+													<div class="label bg-dark_green label_comment p-2">Описание ссылки</div>
+													<div class="txt_info col  p-2" contenteditable="true">Lorem ipsum dolor sit amet
+														consectetur adipisicing
+														elit. Nobis optio voluptatum ratione eveniet cum magnam, repellendus eligendi
+														corporis nam dicta illum pariatur alias soluta nihil id, impedit debitis odio
+														voluptate!
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>
